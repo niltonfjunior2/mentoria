@@ -1,6 +1,6 @@
 # ENGINEERING JOURNAL — PLATAFORMA DE MENTORIA UNIVERSITÁRIA
 
-Este diário consolida o conhecimento técnico, decisões de campo, lições aprendidas e débitos técnicos acumulados durante as sprints de engenharia.
+Este diário consolida o conhecimento técnico, decisões de campo, lições aprendidas e débitos técnicos acumulados durante as sprints de engenharia e operações de sustentação (Day 2).
 
 ---
 
@@ -46,9 +46,12 @@ Este diário consolida o conhecimento técnico, decisões de campo, lições apr
   * *Causa:* Sem cabeçalhos HTTP adequados na CDN, navegadores móveis podem manter o `sw.js` em cache por dias, atrasando atualizações de mentores.
   * *Solução:* Criação do arquivo `vercel.json` forçando `Cache-Control: public, max-age=0, must-revalidate` nos arquivos `/sw.js` e `/manifest.webmanifest`.
 
-### 2. Lições Aprendidas
-* A geração de ícones binários PNG puros (`pwa-192x192.png`, `pwa-512x512.png` e `apple-touch-icon.png`) com suporte a `purpose: any maskable` permite que o aplicativo seja instalado com ícones perfeitos tanto em celulares com ícones circulares (Android) quanto quadrados com bordas arredondadas (iOS).
-* A verificação `display-mode: standalone` via `window.matchMedia` permite ocultar dinamicamente a barra de instalação quando o app já está rodando como PWA instalado.
+---
 
-### 3. Débitos Técnicos
-* **Débitos Técnicos Pendentes:** **Zero.** Todos os débitos técnicos anteriores foram resolvidos nesta sprint.
+## OPERAÇÃO DE SUSTENTAÇÃO (DAY 2): HOTFIX-01 — LOGOTIPO ACADÊMICO NOS ÍCONES PWA
+
+### 1. Problemas Encontrados
+* **Problema:** O ícone do aplicativo adicionado à tela inicial dos smartphones aparecia apenas como um quadrado laranja sólido sem emblema.
+* **Causa:** A geração inicial dos arquivos binários gerava uma matriz de cor uniforme sem o desenho vetorial do logotipo.
+* **Solução:** Regeneração cirúrgica dos ativos `public/pwa-192x192.png`, `public/pwa-512x512.png` e `public/apple-touch-icon.png` rasterizando o emblema acadêmico do capelo universitário com borla em branco sobre o fundo âmbar (`#d97706`), respeitando a margem segura de corte para ícones circulares e arredondados do Android e iOS.
+* **Validação:** Precache do Workbox atualizado com sucesso no Service Worker e 100% dos testes aprovados (`npm test` e `npm run build`).

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "mentor-1",
+    "nome": "Ana Clara Rocha",
+    "curso": "Engenharia de Computação",
+    "semestre": "8º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Cálculo I", "Cálculo II", "Álgebra Linear"],
+    "bio": "Apaixonada por exatas e por descomplicar integrais e derivadas com exemplos práticos do dia a dia.",
+    "whatsapp": "5511999991111",
+    "email": "ana.rocha@universidade.edu.br"
+  },
+  {
+    "id": "mentor-2",
+    "nome": "Lucas Martins",
+    "curso": "Ciência da Computação",
+    "semestre": "6º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Algoritmos e Estrutura de Dados", "Programação Web", "Python"],
+    "bio": "Ajudo quem está travado em recursão, ponteiros e quer construir os primeiros projetos práticos.",
+    "whatsapp": "5521988882222",
+    "email": "lucas.martins@universidade.edu.br"
+  },
+  {
+    "id": "mentor-3",
+    "nome": "Beatriz Mendes",
+    "curso": "Medicina Veterinária",
+    "semestre": "7º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Bioquímica", "Fisiologia Básica", "Biologia Celular"],
+    "bio": "Foco em mapas mentais e resumos visuais para memorizar ciclos metabólicos sem desespero.",
+    "whatsapp": "5531977773333",
+    "email": "beatriz.mendes@universidade.edu.br"
+  },
+  {
+    "id": "mentor-4",
+    "nome": "Gabriel Souza",
+    "curso": "Administração e Economia",
+    "semestre": "5º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Estatística Aplicada", "Matemática Financeira", "Microeconomia"],
+    "bio": "Ensino como dominar fórmulas financeiras, HP12C e análises estatísticas para passar nas provas.",
+    "whatsapp": "5541966664444",
+    "email": "gabriel.souza@universidade.edu.br"
+  },
+  {
+    "id": "mentor-5",
+    "nome": "Juliana Silveira",
+    "curso": "Física",
+    "semestre": "9º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Física Mecânica", "Eletromagnetismo", "Física I"],
+    "bio": "Monitora experiente pronta para te ajudar a entender os conceitos fundamentais antes da lista de exercícios.",
+    "whatsapp": "5551955555555",
+    "email": "juliana.silveira@universidade.edu.br"
+  },
+  {
+    "id": "mentor-6",
+    "nome": "Rodrigo Neves",
+    "curso": "Direito",
+    "semestre": "8º semestre",
+    "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=200&auto=format&fit=crop&q=80",
+    "materias": ["Direito Constitucional", "Teoria Geral do Direito", "Metodologia Científica"],
+    "bio": "Ajudo na estruturação de resumos e artigos científicos, além de revisão de peças e casos práticos.",
+    "whatsapp": "5561944446666",
+    "email": "rodrigo.neves@universidade.edu.br"
+  }
+]
